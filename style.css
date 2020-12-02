@@ -1,11 +1,12 @@
 /* Basislayout */
 
 html, body {
+ 
     height: 100%;
     padding: 0;
-    background-color: #EEEEEE;  
+    background-color: rgb(26, 23, 23);  
     
-    color: #303030;
+    color: #ffffff;
     font: Verdana, Arial, Sans-Serif;
 }
 
@@ -23,44 +24,47 @@ article {
 
 
 header {
-    color: skyblue;
+    color: rgb(201, 35, 35);
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 }
 
 
 footer {
     text-align: center;
     padding-bottom: 10px;
+    font-family: monospace;
 }
 
 
 /* specifieke stijlen */
 
 img.zweefLinks {
-    float: left;
-    margin-right: 15px;
+    float: left;  
+}
+img.zweefRechts {
+    float: right;
 }
 
 .smalltext {
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 a {
-    color: skyblue;
+    color: rgb(250, 248, 248);
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline overline;
 }
-
-
 /* navigatiebalk */
 nav ul {
     list-style-type: none;
     margin: auto;
-    padding: 0;
-    background-color: #dddddd;
+    padding: 10px 14px;
+    border: 10px;
+    background-color: #white;
     overflow: hidden;
 }
 
@@ -70,18 +74,18 @@ nav ul li {
 
 nav li a {
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    background-color: #aaaaaa;
+    background-color: #ca5353e3;
 }
 
 nav li a.active {
-    background-color: skyblue;
+    background-color: rgba(201, 35, 35, 0.87);
 }
 
 
