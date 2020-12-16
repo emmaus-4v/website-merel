@@ -4,8 +4,7 @@ html, body {
  
     height: 100%;
     padding: 0;
-    background-color: rgb(26, 23, 23);  
-    
+    background-color: rgb(27, 26, 26);  
     color: #ffffff;
     font: Verdana, Arial, Sans-Serif;
 }
@@ -14,25 +13,28 @@ html, body {
 main {
     margin: 0 auto;
     width: 700px;
-    position: relative;
 }
 
 
 article {
     text-align: justify;
+    font-family: "Arial Narrow", "sans-serif";
 }
 
 
 header {
-    color: rgb(201, 35, 35);
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgb(128, 3, 3);
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    border: 25px; 
+    font-family: Impact,'Arial Narrow Bold', sans-serif ;
 }
 
-
 footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
-    padding-bottom: 10px;
     font-family: monospace;
 }
 
@@ -41,13 +43,67 @@ footer {
 
 img.zweefLinks {
     float: left;  
+    height: 150px;
+    height: 200px;
+    animation: fadein 8s;
+    
 }
 img.zweefRechts {
     float: right;
+    height: 300px;
+    width: 250px;
+    animation: fadein 8s;
+}
+img.samenvatting1 {
+    float: right;
+    height:317px;
+    width: 300px;
+    animation: fadein 8s;
+}
+img.samenvatting2 {
+    float: right;
+    height:220px;
+    width: 200px;
+    animation: fadein 8s;
+}
+img.samenvatting3 {
+    float: right;
+    height:220px;
+    width: 200px;
+    animation: fadein 8s;
+}
+img.MBB {
+    float:left;
+    height: 200px;
+    width: 150px;
 }
 
 .smalltext {
-    font-size: 0.9em;
+    font-size: 14px;
+}
+
+.Left {
+ font-family: Bold;
+    background-color: rgba(185, 15, 15) ;
+    float: left;
+    font-size: 14px;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+
+}
+.idk {
+    font-family: Bold;
+    text-decoration: wavy;
+}
+.Right {
+     font-family: Bold;
+     Background-color: rgb(185, 15, 15);
+     float: right;
+     width: 300px;
+     height: 200px;
+     margin:20px;   
+     font-size: 14px;  
 }
 
 a {
@@ -58,13 +114,31 @@ a {
 a:hover {
     text-decoration: underline overline;
 }
+
+.animation {
+    animation: mymove 20s infinite;
+}
+
+/* animation */
+@keyframes mymove {
+     0% { color: rgb(255, 0, 157)} 
+     25% { color: rgb(195, 0, 255)}
+     50% { color: rgb(0, 153, 255)}
+     75% { color: rgb(251, 255, 0)}
+     100% { color: rgb(255, 153, 0)}
+}
+@keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 /* navigatiebalk */
 nav ul {
     list-style-type: none;
     margin: auto;
-    padding: 10px 14px;
+    padding: 5px 5px;
     border: 10px;
-    background-color: #white;
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
 }
 
@@ -76,16 +150,17 @@ nav li a {
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
+    
 }
 
 nav li a:hover {
-    background-color: #ca5353e3;
+    background-color: #860000;
 }
 
 nav li a.active {
-    background-color: rgba(201, 35, 35, 0.87);
+    background-color: rgb(187, 1, 1)
 }
 
 
